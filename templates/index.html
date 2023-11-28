@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart disease prediction</title>
+</head>
+<body>
+    <h2> TenYearCHD prediction </h2>
+
+    <form method="POST" action="/predict">
+
+        <label>MALE : </label>
+        <input type="text" name="male">
+        <br>
+        <br>
+
+        <label>AGE : </label>
+        <input type="text" name="age">
+        <br>
+        <br>
+
+        <label>EDUCATION : </label>
+        <input type="text" name="education">
+        <br>
+        <br>
+
+        <label>CURRENTSMOKER : </label>
+        <input type="text" name="currentSmoker">
+        <br>
+        <br>
+
+        <label>CIGSPERDAY : </label>
+        <input type="text" name="cigsPerDay">
+        <br>
+        <br>
+
+        <label>BPMEDS : </label>
+        <input type="text" name="BPMeds">
+        <br>
+        <br>
+
+        <label>PREVALENTSTROKE : </label>
+        <input type="text" name="prevalentStroke">
+        <br>
+        <br>
+
+        <label>PREVALENTHYP : </label>
+        <input type="text" name="prevalentHyp">
+        <br>
+        <br>
+
+        <label>DIABETES : </label>
+        <input type="text" name="diabetes">
+        <br>
+        <br>
+
+        <label>TOTCHOL : </label>
+        <input type="text" name="totChol">
+        <br>
+        <br>
+
+        <label>SYSBP : </label>
+        <input type="text" name="sysBP">
+        <br>
+        <br>
+
+        <label>DIABP : </label>
+        <input type="text" name="diaBP">
+        <br>
+        <br>
+
+        <label>BMI : </label>
+        <input type="text" name="BMI">
+        <br>
+        <br>
+
+        <label>HEARTRATE : </label>
+        <input type="text" name="heartRate">
+        <br>
+        <br>
+
+        <label>GLUCOSE : </label>
+        <input type="text" name="glucose">
+        <br>
+        <br>
+
+        <input type="submit" value="PREDICT">
+
+        {% if anticipation %}
+
+        <h2> {{ anticipation }} </h2>
+
+        {% endif %}
+    </form>
+
+</body>
+</html>
