@@ -1,6 +1,6 @@
-## End to end MLOps project
+# End to end MLOps project
 
-# Software and tools requirements
+## Software and tools requirements
 
 1. [Github Account](https://github.com)
    
@@ -16,7 +16,7 @@ Create a new environment for project
 conda create -p venv python==3.7 -y
 ...
 
-# Docker setup in EC2 commands to be executed
+## Docker setup in EC2 commands to be executed
 
 sudo apt-get update -y
 
