@@ -86,7 +86,13 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
-         docker ps -q --filter "name=pushsaro" | grep -q . && docker stop pushsaro && docker rm -fv pushsaro
+         if docker ps -q --filter "name=pushsaro" | grep -q . ; then
+              docker stop pushsaro
+              docker rm -fv pushsaro
+         else
+              echo "Container 'pushsaro' not found or not running."
+          fi
+
        
       - name: Run Docker Image to serve users
         run: |
