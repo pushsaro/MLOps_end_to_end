@@ -35,9 +35,9 @@ def predict():
         result = model.predict(vars)[0]
 
         if result==1:
-            output = "Prone to TenYearCHD"
+            output = "You are prone to Heart Disease"
         else:
-            output = "Not prone to TenYearCHD"
+            output = "You are not prone to Heart Disease"
 
         return render_template("index.html", anticipation = output)
 
